@@ -1,0 +1,14 @@
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/bin/Debug/net5.0/ConversationalAI.Infrastructure.deps.json
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/bin/Debug/net5.0/ConversationalAI.Infrastructure.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/bin/Debug/net5.0/ConversationalAI.Infrastructure.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.csproj.AssemblyReference.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.AssemblyInfoInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.AssemblyInfo.cs
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ref/ConversationalAI.Infrastructure.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/ConversationalAI.Infrastructure.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/bin/Debug/net5.0/Microsoft.Azure.Documents.ServiceInterop.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/bin/Debug/net5.0/Cosmos.CRTCompat.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.Infrastructure/obj/Debug/net5.0/refint/ConversationalAI.Infrastructure.dll

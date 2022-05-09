@@ -1,0 +1,15 @@
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/HubService.deps.json
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/ref/HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/HubService.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/ConversationalAI.Infrastructure.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/bin/Debug/net5.0/ConversationalAI.Infrastructure.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.csproj.AssemblyReference.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.AssemblyInfoInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.AssemblyInfo.cs
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.csproj.CoreCompileInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.csproj.CopyComplete
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/ref/HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/HubService/obj/Debug/net5.0/HubService.pdb

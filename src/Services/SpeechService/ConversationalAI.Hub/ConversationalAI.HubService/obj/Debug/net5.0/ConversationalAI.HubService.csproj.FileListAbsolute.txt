@@ -1,0 +1,17 @@
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/ConversationalAI.HubService.deps.json
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/ConversationalAI.HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/ConversationalAI.HubService.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/ConversationalAI.Infrastructure.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/ConversationalAI.Infrastructure.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.csproj.AssemblyReference.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.AssemblyInfoInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.AssemblyInfo.cs
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.csproj.CoreCompileInputs.cache
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.csproj.CopyComplete
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ref/ConversationalAI.HubService.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/ConversationalAI.HubService.pdb
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/Microsoft.Azure.Documents.ServiceInterop.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/bin/Debug/net5.0/Cosmos.CRTCompat.dll
+/Users/akrish/Documents/code/ConversationalAI.Hub/ConversationalAI.HubService/obj/Debug/net5.0/refint/ConversationalAI.HubService.dll
