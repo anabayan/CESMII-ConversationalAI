@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3OktxA3+L20/WP8/da2nKiBGeudgy999ycgXDoxbSQYUJ2tn9AKiqw2zJUQ29fWRxD2vQf/2qxHchvLxzRDHQ==",
+  "dgSpecHash": "BArwb3lsxuF9vVSHqlh9vRMintMdEAJRhqK/wnGTIlxIRKksPjG50+KtDwK0S45E2NZlyZ3tcx7SKX/k8Shg1w==",
   "success": true,
-  "projectFilePath": "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
+  "projectFilePath": "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
   "expectedPackageFiles": [
     "/Users/akrish/.nuget/packages/graphql.client/4.0.2/graphql.client.4.0.2.nupkg.sha512",
     "/Users/akrish/.nuget/packages/graphql.client.abstractions/4.0.2/graphql.client.abstractions.4.0.2.nupkg.sha512",

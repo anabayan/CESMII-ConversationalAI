@@ -74,7 +74,31 @@ namespace ConversationalAI.API.Controllers
                 throw;
             }
         }
-        
+
+        [HttpGet]
+        [Route("/restock")]
+        public async Task Restock()
+        {
+            var smpResponse = await GraphQLHelper.PerformGraphQLRequest(_smpQuery);
+            var equipmentList = JsonConvert.DeserializeObject<WarehouseEquipmentList>(smpResponse);
+
+            if (equipmentList?.WarehouseEquipment != null)
+                foreach (var equipment in equipmentList.WarehouseEquipment)
+                {
+                    var mutationQuery = $@"
+                             mutation updateAttributeMutation {{
+                              updateAttribute(input: {{ id: ""{equipment.Id.ToString()}"", patch: {{intValue: ""3""}}}})  {{
+                                    clientMutationId
+                                    attribute {{
+                                        id
+                                        intValue
+                                    }}
+                                }}
+                            }}";
+                    await GraphQLHelper.PerformGraphQLRequest(mutationQuery);
+                }
+        }
+
 
         [HttpGet]
         [Route("/PickItem")]
