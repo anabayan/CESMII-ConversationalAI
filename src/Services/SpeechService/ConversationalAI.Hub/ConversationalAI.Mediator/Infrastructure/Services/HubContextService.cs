@@ -20,6 +20,8 @@ namespace ConversationalAI.Mediator.Infrastructure.Services
 
         public async Task Log(string method, string user, string message, string originalMessage)
         {
+            if(message.Length > 1000) message = message.Substring(0, 100);
+            if(originalMessage.Length > 1000) originalMessage = originalMessage.Substring(0, 100);
             await _hubContext.Clients.All.SendAsync("LogReceive", method, user, message, originalMessage);
         }
         

@@ -55,6 +55,7 @@ namespace ConversationalAI.Mediator
                         builder =>
                         {
                             builder.WithOrigins("https://localhost:63342", 
+                                    "https://localhost:63343",
                                     "https://localhost:5001")
                                 .AllowCredentials()
                                 .AllowAnyMethod()
@@ -70,7 +71,7 @@ namespace ConversationalAI.Mediator
             
             services.Configure<SpeechServiceSettings>(Configuration.GetSection("AzureSpeechConfig"));
 
-            services.AddSingleton<ISpeechService, SpeechService.Services.SpeechService>();
+            services.AddHttpClient<ISpeechService, SpeechService.Services.SpeechService>();
             services.AddSingleton<IHubRepository, HubRepository>();
             services.AddSingleton<IHubContextService, HubContextService>();
             
