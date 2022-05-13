@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj": {}
+    "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj": {}
   },
   "projects": {
-    "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj": {
+    "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
+        "projectUniqueName": "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
         "projectName": "ConversationalAI.API",
-        "projectPath": "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
+        "projectPath": "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/ConversationalAI.API.csproj",
         "packagesPath": "/Users/akrish/.nuget/packages/",
-        "outputPath": "/Users/akrish/Documents/code/ConversationalAI.API/ConversationalAI.API/obj/",
+        "outputPath": "/Users/akrish/Documents/GitHub/CESMII-ConversationalAI/src/Services/PlatformAPI/ConversationalAI.API/ConversationalAI.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akrish/.nuget/NuGet/NuGet.Config"
