@@ -68,10 +68,10 @@
                 <StackLayout Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="Fill">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Image Source="voice_command" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,16,10,2" HeightRequest="40" WidthRequest="40" Aspect="AspectFit"/>
+                        <!--<Button Text="{Binding MuteText}" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="#3269C3" TextColor="#FFFFFF" Margin="4" Command="{Binding MuteCommand}"/>-->
                         <Label Text="{Binding CurrentSpeech}" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#1E3D73" Margin="60,10,20,0"/>
                     </StackLayout>
-                    <!--<Button Text="{Binding MuteText}" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="#3269C3" TextColor="#FFFFFF" Margin="4" Command="{Binding MuteCommand}"></Button>-->
-
+                    
                     <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                         <Entry WidthRequest="100" Text="{Binding MessageInput}" HorizontalOptions="Fill" VerticalOptions="Start" TextColor="#1E3D73" IsVisible="{Binding IsSendVisible}"  Margin="60,10,20,0"/>
                         <Button Text="Send" HorizontalOptions="Center" VerticalOptions="Start" TextColor="#1E3D73" Margin="60,10,20,0" IsVisible="{Binding IsSendVisible}" Command="{Binding SendCommand}"/>
