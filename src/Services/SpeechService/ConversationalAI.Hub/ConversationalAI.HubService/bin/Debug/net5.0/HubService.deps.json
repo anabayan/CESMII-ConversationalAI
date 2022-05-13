@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HubService/1.0.0": {
+        "dependencies": {
+          "ConversationalAI.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "HubService.dll": {}
+        }
+      },
+      "ConversationalAI.Infrastructure/1.0.0": {
+        "runtime": {
+          "ConversationalAI.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HubService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConversationalAI.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
