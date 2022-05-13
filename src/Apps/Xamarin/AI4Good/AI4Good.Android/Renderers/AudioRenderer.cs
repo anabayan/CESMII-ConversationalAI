@@ -50,7 +50,7 @@ namespace AI4Good.Droid.Renderers
             }
             catch (Exception ex)
             {
-
+                IsPlaying = false;
             }
             return true;
         }

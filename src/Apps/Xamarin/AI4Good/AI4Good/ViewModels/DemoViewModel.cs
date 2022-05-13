@@ -5,14 +5,11 @@ using Plugin.AudioRecorder;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Plugin.AudioRecorder;
 
 namespace AI4Good.ViewModels
 {
@@ -202,7 +199,7 @@ namespace AI4Good.ViewModels
         {
             if (!string.IsNullOrEmpty(message))
             {
-
+                
                 while (Audio.IsPlaying)
                 {
                     await Task.Delay(100);
@@ -257,12 +254,12 @@ namespace AI4Good.ViewModels
         {
             if (MuteText != "MUTE" && !recorder.IsRecording)
             {
-                recorder.StartRecording();
+                recorder.StartRecording().ConfigureAwait(false);
             }
-            if(!Audio.IsPlaying)
+            if (!Audio.IsPlaying)
             {
                 MuteText = "MUTE";
-                recorder.StartRecording();
+                recorder.StartRecording().ConfigureAwait(false);
             }
         }
 
@@ -270,26 +267,24 @@ namespace AI4Good.ViewModels
         {
             if (sender.GetType() == typeof(AudioRecorderService))
             {
-                //MicrophoneImage = "mic_off.png";
                 var arService = (AudioRecorderService)sender;
                 var filePath = arService.FilePath;
                 SendAudioForTranslation(filePath);
             }
             if (!recorder.IsRecording)
             {
-                await Task.Delay(1000);
-                recorder.StartRecording();
-
+                //await Task.Delay(1000);
+                await recorder.StartRecording();
             }
         }
 
-        private async void SendAudioForTranslation(string filePath)
+        private void SendAudioForTranslation(string filePath)
         {
             using (FileStream stream = new FileStream(filePath, FileMode.Open))
             {
                 var fileByteArray = ReadBytesFromStream(stream);
                 var base64message = Convert.ToBase64String(fileByteArray);
-                hubConnector.GetSpeech2TextMethodName(UserName, base64message,"Pick");
+                hubConnector.GetSpeech2TextMethodName(UserName, base64message);
             }
         }
         public byte[] ReadBytesFromStream(Stream input)

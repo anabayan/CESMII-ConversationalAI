@@ -50,7 +50,7 @@ namespace AI4Good.Services
             this.TTSResponseDelegate.Invoke(user, message, originalMessage);
         }
     
-
+        
         private void LogReceived(string user, string message, DateTime utcTime)
         {
             throw new NotImplementedException();
@@ -84,9 +84,9 @@ namespace AI4Good.Services
         {
             _hubConnection.SendAsync(_DEFAULT_GetText2SpeechMethodName, UserName, Message);
         }
-        public void GetSpeech2TextMethodName(string UserName, string base64message, string intent, CancellationToken cancellationToken = default)
+        public void GetSpeech2TextMethodName(string UserName, string base64message, CancellationToken cancellationToken = default)
         {
-            //_hubConnection.SendAsync(_DEFAULT_GetSpeech2TextMethodName, UserName, base64message, intent);
+            _hubConnection.SendAsync(_DEFAULT_GetSpeech2TextMethodName, UserName, base64message);
         }
     }
 }
