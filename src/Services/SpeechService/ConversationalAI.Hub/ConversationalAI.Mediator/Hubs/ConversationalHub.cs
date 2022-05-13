@@ -44,7 +44,7 @@ namespace ConversationalAI.Mediator.Hubs
             await _hubContextService.Broadcast(Context.ConnectionId, user, message);
         }
         
-        public async Task GetTextFromSpeech(string user, string base64Speech, string intent)
+        public async Task GetTextFromSpeech(string user, string base64Speech)
         {
             await _hubContextService.Log(nameof(GetTextFromSpeech), user, string.Empty, base64Speech);
             

@@ -44,7 +44,7 @@
     document.getElementById("send-btn").addEventListener("click", function ()
     {
         let data = document.getElementById("msg").value;
-        connection.invoke("GetSpeechFromText", "anabayan", data).catch(err => console.error(err));
+        connection.invoke("GetTextFromSpeech", "anabayan", data).catch(err => console.error(err));
     })
 </script>
 </html>

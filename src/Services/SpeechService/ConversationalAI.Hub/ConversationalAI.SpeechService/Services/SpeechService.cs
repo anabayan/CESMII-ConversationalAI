@@ -18,13 +18,15 @@ namespace ConversationalAI.SpeechService.Services
     public class SpeechService : ISpeechService
     {
         private readonly SpeechConfig _speechConfig;
+        private readonly HttpClient _httpClient;
         // private readonly  SpeechServiceSettings _speechServiceSettings;
         
-        public SpeechService(IOptionsMonitor<SpeechServiceSettings> speechSettings)
+        public SpeechService(IOptionsMonitor<SpeechServiceSettings> speechSettings, HttpClient httpClient)
         {
             var speechServiceSettings = speechSettings.CurrentValue;
             _speechConfig = SpeechConfig.FromSubscription(speechServiceSettings.SubscriptionKey, speechServiceSettings.AzureRegion);
             _speechConfig.SpeechRecognitionLanguage = speechServiceSettings.Language;
+            _httpClient = httpClient;
         }
 
         public async Task<string> GetSpeech(string message)
@@ -99,6 +101,21 @@ namespace ConversationalAI.SpeechService.Services
                 // do
                 // {
                 //     readBytes = reader.ReadBytes(1024);
+                //     audioInputStream.Write(readBytes, readBytes.Length);
+                // } while (readBytes.Length > 0);
+                //
+                // var result = await recognizer.RecognizeOnceAsync();
+                // return result.Text;
+
+                // var reader = new BinaryReader(new MemoryStream(audioBytes));
+                // using var audioInputStream = AudioInputStream.CreatePushStream();
+                // using var audioConfig = AudioConfig.FromStreamInput(audioInputStream);
+                // using var recognizer = new SpeechRecognizer(_speechConfig, audioConfig);
+                //
+                // byte[] readBytes;
+                // do
+                // {
+                //     readBytes = reader.ReadBytes(1024);
                 //     audioInputStream.Write(readBytes, audioBytes.Length);
                 // } while (readBytes.Length > 0);
                 //
@@ -107,22 +124,21 @@ namespace ConversationalAI.SpeechService.Services
                 // return result.Text;
                 var endPoint =
                     $"https://{_speechConfig.Region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US";
-                var client = new HttpClient();
-                client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", _speechConfig.SubscriptionKey);
-                byte[] byteData = audioBytes;
-                using (var content = new ByteArrayContent(byteData))
+                _httpClient.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", _speechConfig.SubscriptionKey);
+                using var content = new ByteArrayContent(audioBytes);
+                
+                content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                
+                var response = await _httpClient.PostAsync(endPoint, content);
+                
+                if (response.IsSuccessStatusCode)
                 {
-                    content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                    var response = await client.PostAsync(endPoint, content);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var responseString = await response.Content.ReadAsStringAsync();
-                        var result = JsonConvert.DeserializeObject<SpeechToTextResult>(responseString);
-                        return result.DisplayText;
-                    }
-                    else
-                        return null;
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    var result = JsonConvert.DeserializeObject<SpeechToTextResult>(responseString);
+                    return result.DisplayText;
                 }
+                else
+                    return null;
             }
             catch (Exception e)
             {
