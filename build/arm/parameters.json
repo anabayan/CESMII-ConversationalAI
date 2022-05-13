@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_AI4Good_CNCYBotHost_name": {
+            "value": null
+        },
+        "sites_AI4Good_SingalR_Hub_name": {
+            "value": null
+        },
+        "sites_ConversationalAI_API_name": {
+            "value": null
+        },
+        "sites_ConversationalAI_QnAMaker_name": {
+            "value": null
+        },
+        "botServices_AI4Good_CNCYDemo_name": {
+            "value": null
+        },
+        "serverfarms_ConversationalAI_QnAMaker_name": {
+            "value": null
+        },
+        "accounts_ConversationalAI_name": {
+            "value": null
+        },
+        "accounts_ConversationalAI_LUIS_name": {
+            "value": null
+        },
+        "components_ConversationalAI_QnAMaker_ai_name": {
+            "value": null
+        },
+        "accounts_ConversationalAI_QnAMaker_name": {
+            "value": null
+        },
+        "accounts_ConversationalAILUIS_Authoring_name": {
+            "value": null
+        },
+        "vaults_bot_secrets_qmd7fq_externalid": {
+            "value": null
+        },
+        "serverfarms_cncy_eric_cmsdemo_externalid": {
+            "value": null
+        },
+        "serverfarms_AI4Good_ASP_externalid": {
+            "value": null
+        }
+    }
+}
