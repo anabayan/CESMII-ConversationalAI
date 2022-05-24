@@ -1,3 +1,5 @@
 # CESMII-ConversationalAI
 
-Refer to: [docs folder](docs/README.md)
+
+Deployment and Setup:
+[link](/docs/README.md)
