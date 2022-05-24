@@ -1,3 +1,3 @@
 # CESMII-ConversationalAI
 
-Refer to: [docs folder]('docs/README.md')
+Refer to: [docs folder](docs/README.md)
